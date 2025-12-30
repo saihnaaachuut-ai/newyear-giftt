@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Шинэ жилийн мэнд хүргэе 💓</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Marck+Script&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Background -->
+  <div class="bg"></div>
+  <canvas id="snow"></canvas>
+
+  <!-- Top Title -->
+  <h1 class="page-title">
+    Шинэ жилийн мэнд хүргэе <span class="title-emoji">💓</span>
+  </h1>
+
+  <!-- Main Card -->
+  <main class="wrap">
+    <section class="card glass">
+      <div class="top">
+        <div class="badge">🎄 2026 🎄</div>
+      </div>
+
+      <!-- Countdown -->
+      <div class="countdown">
+        <div class="timebox">
+          <span id="days">00</span>
+          <small>Өдөр</small>
+        </div>
+        <div class="timebox">
+          <span id="hours">00</span>
+          <small>Цаг</small>
+        </div>
+        <div class="timebox">
+          <span id="mins">00</span>
+          <small>Минут</small>
+        </div>
+        <div class="timebox">
+          <span id="secs">00</span>
+          <small>Секунд</small>
+        </div>
+      </div>
+
+      <!-- RU Box -->
+      <div class="ru-box">
+        <div class="ru-title">✨ С Новым годом! ✨</div>
+        <div class="ru">
+          Пусть этот год принесёт тебе радость, уверенность
+          и исполнение всех мечт. Я верю в тебя 💙
+        </div>
+      </div>
+
+      <!-- Gift Section -->
+      <div class="reasons">
+        <h2 class="sec-title">Шинэ он ирлээ YEAH 🎁</h2>
+
+        <button class="gift-btn" id="openGiftPopup" type="button">
+          🎁 НАД ДЭЭР ДАРААРАЙ CUTIE :)
+        </button>
+      </div>
+
+      <!-- Actions -->
+      <div class="actions">
+        <button class="btn" id="openSecret" type="button">Нууц мессеж ✨</button>
+        <button class="btn outline" id="fireworks" type="button">⛄❄️ Дараад үзээрэй</button>
+      </div>
+
+      <footer class="footer">
+        <div>— Чамд зориулсан жижигхэн бэлэг 💝 —</div>
+      </footer>
+    </section>
+  </main>
+
+  <!-- Secret Modal (Poem) -->
+  <div class="modal" id="modal">
+    <div class="modal-card glass">
+      <button class="close" id="closeModal" type="button">✕</button>
+      <h2>💌 Шинэ жилийн захиа</h2>
+
+      <div class="poem">
+        Шинэ он чамд эрүүл энх авчирч<br/>
+        Шинэхэн мөрөөдөл чинь тэнгэрт асна<br/>
+        Холын тэр хотод байгаа ч<br/>
+        Миний бодол чамтай хамт байна<br/><br/>
+        Орос орны хүйтэн шөнүүдэд ч<br/>
+        Оюун ухаан чинь од шиг гялалзана<br/>
+        Холын хотод цасан бударч байхад<br/>
+        Хөнгөн бодол минь чам руу аялан очно<br/><br/>
+        Чи ядрах мөчдөө энийг л санаарай<br/>
+        Чамайг л гэх нэгэн үргэлж энд байна<br/>
+        Энэхэн хорвоод зорьсон бүхэндээ хүрнэ гэдэгт<br/>
+        Би өдөр бүр итгэсээр байх болно<br/>
+      </div>
+
+      <div class="closing-line">
+        <span class="heart">🫶</span>
+        Шинэ жилийн баярын мэнд хүргэе 🥳<br/>
+        Сайханбаяраас Мөнхжинд зориулав. 😊
+        <span class="spark">✨</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Gift Popup Modal -->
+  <div class="modal" id="giftPopup">
+    <div class="modal-card glass gift-card">
+      <button class="close" id="closeGiftPopup" type="button">✕</button>
+
+      <h2 class="gift-title">🎁 Surprise for you</h2>
+
+      <p class="gift-text" id="giftText">
+        ✨ Шинэ онтой хамт<br>
+        чиний мөрөөдөл нэг нэгээрээ биелж,<br>
+        өдрүүд чинь үргэлж дулаан байгаасай 💙
+      </p>
+
+      <div class="gift-heart">💗</div>
+
+      <button class="btn mini" id="newGiftText" type="button">Дахин нэг дараарай ✨</button>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
